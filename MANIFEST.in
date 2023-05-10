@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include shanti_education *.css
+recursive-include shanti_education *.csv
+recursive-include shanti_education *.html
+recursive-include shanti_education *.ico
+recursive-include shanti_education *.js
+recursive-include shanti_education *.json
+recursive-include shanti_education *.md
+recursive-include shanti_education *.png
+recursive-include shanti_education *.py
+recursive-include shanti_education *.svg
+recursive-include shanti_education *.txt
+recursive-exclude shanti_education *.pyc
