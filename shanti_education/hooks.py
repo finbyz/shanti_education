@@ -109,6 +109,11 @@ app_license = "MIT"
 #		"on_trash": "method"
 #	}
 # }
+doc_events = {
+	"Lead": {
+		"validate": "shanti_education.shanti_education.doc_event.lead.validate"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
