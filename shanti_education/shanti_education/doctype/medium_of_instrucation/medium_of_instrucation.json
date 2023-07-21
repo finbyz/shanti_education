@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:medium_of_instrucation",
+ "creation": "2023-07-20 14:26:34.705543",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medium_of_instrucation"
+ ],
+ "fields": [
+  {
+   "fieldname": "medium_of_instrucation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medium of Instrucation",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-20 14:26:43.971064",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Medium of Instrucation",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,522 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-20 11:47:27.555997",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "salutation",
+  "middle_name",
+  "mobile_no",
+  "email",
+  "birth_date",
+  "age_as_on",
+  "status",
+  "source",
+  "center",
+  "photo",
+  "passport_number",
+  "aadhaar_number",
+  "pan_number",
+  "column_break_3hqdl",
+  "lead_owner",
+  "first_name",
+  "last_name",
+  "gender",
+  "preferred_program",
+  "lead_type",
+  "year",
+  "term",
+  "passport_photo",
+  "aadhaar_photo",
+  "pan_photo",
+  "contact_info",
+  "father_details_section",
+  "father_full_name",
+  "father_mobile_no",
+  "father_email",
+  "column_break_6v1vy",
+  "fathers_occupation",
+  "father_whatsapp",
+  "mother_details_section",
+  "mother_full_name",
+  "mother_mobile_no",
+  "mother_email",
+  "column_break_c0go7",
+  "mothers_occupation",
+  "mother_whatsapp",
+  "parmenent_details",
+  "address_line_1",
+  "area",
+  "state",
+  "pincode",
+  "column_break_d2mqf",
+  "address_line_2",
+  "city",
+  "country",
+  "student_qualification_tab",
+  "10th_details_section",
+  "board_name",
+  "passing_year",
+  "medium_of_instrucation",
+  "column_break_xggc7",
+  "percentage",
+  "upload_doc",
+  "12thdiploma_details_section",
+  "school_nameboard_name",
+  "12th_passing_year",
+  "12th_medium_of_instrucation",
+  "column_break_um1xl",
+  "stream",
+  "12th_percentage",
+  "12th_upload_doc",
+  "graduation_details_section",
+  "university",
+  "gra_passing_year",
+  "backlogs",
+  "gra_medium_of_instrucation",
+  "column_break_tgkrm",
+  "course",
+  "cgpa",
+  "gra_upload_doc"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CRM-KGFEAD-.####.-.DD.MM.YY."
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "label": "Lead Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "age_as_on",
+   "fieldtype": "Data",
+   "label": "Age As on",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Visit Scheduled\nVisit Done\nFollowing Up\nAdmission Done\nNot Converted\nJUNK\nAge Not Eligible\nEligible for Next Year"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Lead Source"
+  },
+  {
+   "default": "Student",
+   "fieldname": "lead_type",
+   "fieldtype": "Select",
+   "label": "Lead Type",
+   "options": "\nClient\nChannel Partner\nConsultant\nStudent"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "term",
+   "fieldtype": "Select",
+   "label": "Term",
+   "options": "Full Term\nMid Term"
+  },
+  {
+   "fieldname": "preferred_program",
+   "fieldtype": "Select",
+   "label": "Preferred Program",
+   "options": "Big Data Analytics (BDA)  _ 2325\nDigital Media (DM) _2325\nIR 4.0_2325",
+   "reqd": 1
+  },
+  {
+   "fieldname": "center",
+   "fieldtype": "Link",
+   "label": "Center",
+   "options": "Center"
+  },
+  {
+   "fieldname": "father_full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fathers_occupation",
+   "fieldtype": "Link",
+   "label": "Father's Occupation",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "father_mobile_no",
+   "fieldtype": "Data",
+   "label": "Father Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "father_whatsapp",
+   "fieldtype": "Data",
+   "label": "Father WhatsApp"
+  },
+  {
+   "fieldname": "father_email",
+   "fieldtype": "Data",
+   "label": "Father Email"
+  },
+  {
+   "fieldname": "mother_full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mother Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mothers_occupation",
+   "fieldtype": "Link",
+   "label": "Mother's Occupation ",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "mother_mobile_no",
+   "fieldtype": "Data",
+   "label": "Mother Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_whatsapp",
+   "fieldtype": "Data",
+   "label": "Mother WhatsApp"
+  },
+  {
+   "fieldname": "mother_email",
+   "fieldtype": "Data",
+   "label": "Mother Email"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "column_break_3hqdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_info",
+   "fieldtype": "Tab Break",
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "aadhaar_number",
+   "fieldtype": "Data",
+   "label": "Aadhaar Number"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Upload Photo"
+  },
+  {
+   "fieldname": "passport_photo",
+   "fieldtype": "Attach",
+   "label": "Upload Passport"
+  },
+  {
+   "fieldname": "aadhaar_photo",
+   "fieldtype": "Attach",
+   "label": "Upload Aadhaar"
+  },
+  {
+   "fieldname": "pan_photo",
+   "fieldtype": "Attach",
+   "label": "Upload PAN"
+  },
+  {
+   "fieldname": "father_details_section",
+   "fieldtype": "Section Break",
+   "label": "Father Details"
+  },
+  {
+   "fieldname": "mother_details_section",
+   "fieldtype": "Section Break",
+   "label": "Mother Details"
+  },
+  {
+   "fieldname": "parmenent_details",
+   "fieldtype": "Section Break",
+   "label": "Parmenent Details"
+  },
+  {
+   "fieldname": "column_break_6v1vy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_c0go7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_d2mqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_qualification_tab",
+   "fieldtype": "Tab Break",
+   "label": "Student Qualification"
+  },
+  {
+   "fieldname": "10th_details_section",
+   "fieldtype": "Section Break",
+   "label": "10th Details"
+  },
+  {
+   "fieldname": "board_name",
+   "fieldtype": "Link",
+   "label": "Board Name",
+   "options": "Board Name"
+  },
+  {
+   "fieldname": "passing_year",
+   "fieldtype": "Link",
+   "label": "Passing Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "medium_of_instrucation",
+   "fieldtype": "Link",
+   "label": "Medium of Instrucation",
+   "options": "Medium of Instrucation"
+  },
+  {
+   "fieldname": "column_break_xggc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "upload_doc",
+   "fieldtype": "Attach",
+   "label": "Upload Doc"
+  },
+  {
+   "fieldname": "12thdiploma_details_section",
+   "fieldtype": "Section Break",
+   "label": "12th/Diploma Details"
+  },
+  {
+   "fieldname": "school_nameboard_name",
+   "fieldtype": "Link",
+   "label": "School Name/Board Name",
+   "options": "Board Name"
+  },
+  {
+   "fieldname": "12th_passing_year",
+   "fieldtype": "Link",
+   "label": "Passing Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "12th_medium_of_instrucation",
+   "fieldtype": "Link",
+   "label": "Medium of Instrucation",
+   "options": "Medium of Instrucation"
+  },
+  {
+   "fieldname": "stream",
+   "fieldtype": "Link",
+   "label": "Stream",
+   "options": "Stream"
+  },
+  {
+   "fieldname": "12th_percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "12th_upload_doc",
+   "fieldtype": "Attach",
+   "label": "Upload Doc"
+  },
+  {
+   "fieldname": "column_break_um1xl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "graduation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Graduation Details"
+  },
+  {
+   "fieldname": "university",
+   "fieldtype": "Link",
+   "label": "University",
+   "options": "Board Name"
+  },
+  {
+   "fieldname": "gra_passing_year",
+   "fieldtype": "Link",
+   "label": "Passing Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "backlogs",
+   "fieldtype": "Int",
+   "label": "Backlogs"
+  },
+  {
+   "fieldname": "gra_medium_of_instrucation",
+   "fieldtype": "Link",
+   "label": "Medium of Instrucation",
+   "options": "Medium of Instrucation"
+  },
+  {
+   "fieldname": "column_break_tgkrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
+  },
+  {
+   "fieldname": "cgpa",
+   "fieldtype": "Int",
+   "label": "CGPA"
+  },
+  {
+   "fieldname": "gra_upload_doc",
+   "fieldtype": "Attach",
+   "label": "Upload Doc"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-21 10:00:34.484097",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "KeyStone Lead",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
