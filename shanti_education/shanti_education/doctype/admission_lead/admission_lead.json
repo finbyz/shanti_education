@@ -1,0 +1,279 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-25 14:30:13.163784",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "lead_owner",
+  "column_break_vecny",
+  "center_code",
+  "child_details_section",
+  "first_name",
+  "surname",
+  "birth_date",
+  "status",
+  "lead_type",
+  "class",
+  "column_break_dhzql",
+  "middle_name",
+  "gender",
+  "age_as_on",
+  "source",
+  "year",
+  "term",
+  "contact_info_tab",
+  "fathers_full_name",
+  "fathers_mobile_no",
+  "fathers_whatsapp_no",
+  "fathers_email",
+  "column_break_bxtot",
+  "mothers_full_name",
+  "mothers_moble_no",
+  "mothers_whatsapp_no",
+  "mothers_email",
+  "address_info_section",
+  "address_line_1",
+  "area",
+  "country",
+  "pincode",
+  "column_break_l2qkf",
+  "address_line_2",
+  "city",
+  "state"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "label": "Lead Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "child_details_section",
+   "fieldtype": "Section Break",
+   "label": "Child Details"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Birth Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age_as_on",
+   "fieldtype": "Data",
+   "label": "Age as on",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Visit Scheduled\nVisit Done\nFollowing Up\nAdmission Done\nNot Converted\nJUNK\nAge Not Eligible\nEligible for Next Year"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Lead Source"
+  },
+  {
+   "default": "Student",
+   "fieldname": "lead_type",
+   "fieldtype": "Select",
+   "label": "Lead Type",
+   "options": "\nClient\nChannel Partner\nConsultant\nStudent"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "term",
+   "fieldtype": "Select",
+   "label": "Term",
+   "options": "Full Term\nMid Term"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Select",
+   "label": "Class",
+   "options": "Toddcare\nNursery\nJr.Kg.\nSr.Kg."
+  },
+  {
+   "fieldname": "contact_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "fathers_full_name",
+   "fieldtype": "Data",
+   "label": "Father's Full Name"
+  },
+  {
+   "fieldname": "fathers_mobile_no",
+   "fieldtype": "Data",
+   "label": "Father's Mobile No"
+  },
+  {
+   "fieldname": "fathers_email",
+   "fieldtype": "Data",
+   "label": "Father's Email"
+  },
+  {
+   "fieldname": "mothers_full_name",
+   "fieldtype": "Data",
+   "label": "Mother's Full Name"
+  },
+  {
+   "fieldname": "mothers_moble_no",
+   "fieldtype": "Data",
+   "label": "Mother's Moble No."
+  },
+  {
+   "fieldname": "mothers_email",
+   "fieldtype": "Data",
+   "label": "Mother's Email"
+  },
+  {
+   "fieldname": "address_info_section",
+   "fieldtype": "Section Break",
+   "label": "Address Info"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "fathers_whatsapp_no",
+   "fieldtype": "Data",
+   "label": "Father's Whatsapp No."
+  },
+  {
+   "fieldname": "mothers_whatsapp_no",
+   "fieldtype": "Data",
+   "label": "Mother's Whatsapp No."
+  },
+  {
+   "fieldname": "column_break_bxtot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "column_break_l2qkf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dhzql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CRM-SJAD-.center_code.-.####.-.MM.DD.YY."
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vecny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "center_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Center Code",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-25 17:03:53.652366",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Admission Lead",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
