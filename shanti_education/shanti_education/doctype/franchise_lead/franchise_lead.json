@@ -1,365 +1,365 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2023-07-25 16:50:38.071305",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "naming_series",
-  "salutation",
-  "zone",
-  "first_name",
-  "last_name",
-  "occupation",
-  "source",
-  "column_break_rw9pd",
-  "lead_owner",
-  "lead_type",
-  "middle_name",
-  "gender",
-  "birth_date",
-  "tab_break_msdp7",
-  "residential_address_section",
-  "address_line_1",
-  "area",
-  "state",
-  "pincode",
-  "column_break_aylfm",
-  "address_line_2",
-  "city",
-  "country",
-  "mobile_no",
-  "whatsapp_no",
-  "email",
-  "business_address_section",
-  "address_line_1_ba",
-  "area_ba",
-  "state_ba",
-  "pincode_ba",
-  "column_break_pahk5",
-  "address_line_2_ba",
-  "city_ba",
-  "country_ba",
-  "mobile_no_ba",
-  "whatsapp_no_ba",
-  "email_ba",
-  "property_details_section",
-  "intrested_location",
-  "state_pd",
-  "column_break_va5q8",
-  "city_pd",
-  "property_own",
-  "property_type",
-  "property_area",
-  "investment_capacity",
-  "section_break_tkicn",
-  "additional_information",
-  "enquiry_status_section",
-  "status"
- ],
- "fields": [
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "CRM-SJFE-.####.-.MM.DD.YY"
-  },
-  {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "label": "Zone",
-   "options": "Zone",
-   "reqd": 1
-  },
-  {
-   "fieldname": "lead_owner",
-   "fieldtype": "Link",
-   "label": "Lead Owner",
-   "options": "User"
-  },
-  {
-   "fieldname": "salutation",
-   "fieldtype": "Link",
-   "label": "Salutation",
-   "options": "Salutation"
-  },
-  {
-   "fieldname": "gender",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Gender",
-   "options": "Gender",
-   "reqd": 1
-  },
-  {
-   "fieldname": "first_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "middle_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Middle Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Last Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "occupation",
-   "fieldtype": "Link",
-   "label": "Occupation",
-   "options": "Occupation"
-  },
-  {
-   "fieldname": "birth_date",
-   "fieldtype": "Date",
-   "label": "Birth Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "source",
-   "fieldtype": "Link",
-   "label": "Source",
-   "options": "Lead Source"
-  },
-  {
-   "fieldname": "lead_type",
-   "fieldtype": "Select",
-   "label": "Lead Type",
-   "options": "\nHigh\nMedium\nOrdinary"
-  },
-  {
-   "fieldname": "tab_break_msdp7",
-   "fieldtype": "Tab Break",
-   "label": "Contact Info"
-  },
-  {
-   "fieldname": "residential_address_section",
-   "fieldtype": "Section Break",
-   "label": "Residential Address"
-  },
-  {
-   "fieldname": "address_line_1",
-   "fieldtype": "Data",
-   "label": "Address Line 1"
-  },
-  {
-   "fieldname": "address_line_2",
-   "fieldtype": "Data",
-   "label": "Address Line 2"
-  },
-  {
-   "fieldname": "area",
-   "fieldtype": "Data",
-   "label": "Area"
-  },
-  {
-   "fieldname": "city",
-   "fieldtype": "Data",
-   "label": "City"
-  },
-  {
-   "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "State"
-  },
-  {
-   "fieldname": "country",
-   "fieldtype": "Data",
-   "label": "Country"
-  },
-  {
-   "fieldname": "pincode",
-   "fieldtype": "Data",
-   "label": "Pincode"
-  },
-  {
-   "fieldname": "mobile_no",
-   "fieldtype": "Data",
-   "label": "Mobile No."
-  },
-  {
-   "fieldname": "whatsapp_no",
-   "fieldtype": "Data",
-   "label": "Whatsapp No."
-  },
-  {
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email"
-  },
-  {
-   "fieldname": "business_address_section",
-   "fieldtype": "Section Break",
-   "label": "Business Address"
-  },
-  {
-   "fieldname": "address_line_1_ba",
-   "fieldtype": "Data",
-   "label": "Address Line 1"
-  },
-  {
-   "fieldname": "address_line_2_ba",
-   "fieldtype": "Data",
-   "label": "Address Line 2"
-  },
-  {
-   "fieldname": "area_ba",
-   "fieldtype": "Data",
-   "label": "Area "
-  },
-  {
-   "fieldname": "city_ba",
-   "fieldtype": "Data",
-   "label": "City"
-  },
-  {
-   "fieldname": "state_ba",
-   "fieldtype": "Data",
-   "label": "State"
-  },
-  {
-   "fieldname": "country_ba",
-   "fieldtype": "Data",
-   "label": "Country"
-  },
-  {
-   "fieldname": "pincode_ba",
-   "fieldtype": "Data",
-   "label": "Pincode"
-  },
-  {
-   "fieldname": "mobile_no_ba",
-   "fieldtype": "Data",
-   "label": "Mobile No."
-  },
-  {
-   "fieldname": "whatsapp_no_ba",
-   "fieldtype": "Data",
-   "label": "Whatsapp No."
-  },
-  {
-   "fieldname": "email_ba",
-   "fieldtype": "Data",
-   "label": "Email"
-  },
-  {
-   "fieldname": "property_details_section",
-   "fieldtype": "Section Break",
-   "label": "Property Details"
-  },
-  {
-   "fieldname": "intrested_location",
-   "fieldtype": "Data",
-   "label": "Intrested Location"
-  },
-  {
-   "fieldname": "city_pd",
-   "fieldtype": "Data",
-   "label": "City"
-  },
-  {
-   "fieldname": "state_pd",
-   "fieldtype": "Data",
-   "label": "State"
-  },
-  {
-   "fieldname": "property_type",
-   "fieldtype": "Data",
-   "label": "Property Type",
-   "options": "Commercial \nResidential"
-  },
-  {
-   "fieldname": "additional_information",
-   "fieldtype": "Small Text",
-   "label": "Additional Information "
-  },
-  {
-   "fieldname": "enquiry_status_section",
-   "fieldtype": "Section Break",
-   "label": "Enquiry Status"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Visit Scheduled\nVisit Done\nFollowing Up\nNot Converted\nJUNK\nNot Eligible\nIntrested for Next Year"
-  },
-  {
-   "depends_on": "eval:doc.property_own==\"Self Owned\"",
-   "fieldname": "property_area",
-   "fieldtype": "Select",
-   "label": "Property Area",
-   "options": "1200-2000 sq ft\n2000-3200 sq ft\n3200-4500 sq ft\nAbove 4500 sq ft"
-  },
-  {
-   "depends_on": "eval:doc.property_own==\"Self Owned\"",
-   "fieldname": "investment_capacity",
-   "fieldtype": "Select",
-   "label": "Investment Capacity",
-   "options": "05-10 lac\n10-15 lac\n15 lac Above"
-  },
-  {
-   "fieldname": "column_break_rw9pd",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_aylfm",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_pahk5",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_va5q8",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_tkicn",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "property_own",
-   "fieldtype": "Select",
-   "label": "Property Own ",
-   "options": "Rented\nSelf Owned"
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-07-26 10:19:20.360588",
- "modified_by": "Administrator",
- "module": "SHANTI EDUCATION",
- "name": "Franchise Lead",
- "naming_rule": "By \"Naming Series\" field",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
-}
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "naming_series:",
+    "creation": "2023-07-25 16:50:38.071305",
+    "default_view": "List",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+     "naming_series",
+     "salutation",
+     "first_name",
+     "middle_name",
+     "last_name",
+     "occupation",
+     "source",
+     "column_break_rw9pd",
+     "lead_owner",
+     "lead_type",
+     "zone",
+     "gender",
+     "birth_date",
+     "tab_break_msdp7",
+     "residential_address_section",
+     "address_line_1",
+     "area",
+     "state",
+     "pincode",
+     "column_break_aylfm",
+     "address_line_2",
+     "city",
+     "country",
+     "mobile_no",
+     "whatsapp_no",
+     "email",
+     "business_address_section",
+     "address_line_1_ba",
+     "area_ba",
+     "state_ba",
+     "pincode_ba",
+     "column_break_pahk5",
+     "address_line_2_ba",
+     "city_ba",
+     "country_ba",
+     "mobile_no_ba",
+     "whatsapp_no_ba",
+     "email_ba",
+     "property_details_section",
+     "intrested_location",
+     "state_pd",
+     "column_break_va5q8",
+     "city_pd",
+     "property_own",
+     "property_type",
+     "property_area",
+     "investment_capacity",
+     "section_break_tkicn",
+     "additional_information",
+     "enquiry_status_section",
+     "status"
+    ],
+    "fields": [
+     {
+      "fieldname": "naming_series",
+      "fieldtype": "Select",
+      "label": "Series",
+      "options": "CRM-SJFE-.####.-.MM.DD.YY"
+     },
+     {
+      "fieldname": "zone",
+      "fieldtype": "Link",
+      "label": "Zone",
+      "options": "Zone",
+      "reqd": 1
+     },
+     {
+      "fieldname": "lead_owner",
+      "fieldtype": "Link",
+      "label": "Lead Owner",
+      "options": "User"
+     },
+     {
+      "fieldname": "salutation",
+      "fieldtype": "Link",
+      "label": "Salutation",
+      "options": "Salutation"
+     },
+     {
+      "fieldname": "gender",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "Gender",
+      "options": "Gender",
+      "reqd": 1
+     },
+     {
+      "fieldname": "first_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "First Name",
+      "reqd": 1
+     },
+     {
+      "fieldname": "middle_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Middle Name",
+      "reqd": 1
+     },
+     {
+      "fieldname": "last_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Last Name",
+      "reqd": 1
+     },
+     {
+      "fieldname": "occupation",
+      "fieldtype": "Link",
+      "label": "Occupation",
+      "options": "Occupation"
+     },
+     {
+      "fieldname": "birth_date",
+      "fieldtype": "Date",
+      "label": "Birth Date",
+      "reqd": 1
+     },
+     {
+      "fieldname": "source",
+      "fieldtype": "Link",
+      "label": "Source",
+      "options": "Lead Source"
+     },
+     {
+      "fieldname": "lead_type",
+      "fieldtype": "Select",
+      "label": "Lead Type",
+      "options": "\nHigh\nMedium\nOrdinary"
+     },
+     {
+      "fieldname": "tab_break_msdp7",
+      "fieldtype": "Tab Break",
+      "label": "Contact Info"
+     },
+     {
+      "fieldname": "residential_address_section",
+      "fieldtype": "Section Break",
+      "label": "Residential Address"
+     },
+     {
+      "fieldname": "address_line_1",
+      "fieldtype": "Data",
+      "label": "Address Line 1"
+     },
+     {
+      "fieldname": "address_line_2",
+      "fieldtype": "Data",
+      "label": "Address Line 2"
+     },
+     {
+      "fieldname": "area",
+      "fieldtype": "Data",
+      "label": "Area"
+     },
+     {
+      "fieldname": "city",
+      "fieldtype": "Data",
+      "label": "City"
+     },
+     {
+      "fieldname": "state",
+      "fieldtype": "Data",
+      "label": "State"
+     },
+     {
+      "fieldname": "country",
+      "fieldtype": "Data",
+      "label": "Country"
+     },
+     {
+      "fieldname": "pincode",
+      "fieldtype": "Data",
+      "label": "Pincode"
+     },
+     {
+      "fieldname": "mobile_no",
+      "fieldtype": "Data",
+      "label": "Mobile No."
+     },
+     {
+      "fieldname": "whatsapp_no",
+      "fieldtype": "Data",
+      "label": "Whatsapp No."
+     },
+     {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email"
+     },
+     {
+      "fieldname": "business_address_section",
+      "fieldtype": "Section Break",
+      "label": "Business Address"
+     },
+     {
+      "fieldname": "address_line_1_ba",
+      "fieldtype": "Data",
+      "label": "Address Line 1"
+     },
+     {
+      "fieldname": "address_line_2_ba",
+      "fieldtype": "Data",
+      "label": "Address Line 2"
+     },
+     {
+      "fieldname": "area_ba",
+      "fieldtype": "Data",
+      "label": "Area "
+     },
+     {
+      "fieldname": "city_ba",
+      "fieldtype": "Data",
+      "label": "City"
+     },
+     {
+      "fieldname": "state_ba",
+      "fieldtype": "Data",
+      "label": "State"
+     },
+     {
+      "fieldname": "country_ba",
+      "fieldtype": "Data",
+      "label": "Country"
+     },
+     {
+      "fieldname": "pincode_ba",
+      "fieldtype": "Data",
+      "label": "Pincode"
+     },
+     {
+      "fieldname": "mobile_no_ba",
+      "fieldtype": "Data",
+      "label": "Mobile No."
+     },
+     {
+      "fieldname": "whatsapp_no_ba",
+      "fieldtype": "Data",
+      "label": "Whatsapp No."
+     },
+     {
+      "fieldname": "email_ba",
+      "fieldtype": "Data",
+      "label": "Email"
+     },
+     {
+      "fieldname": "property_details_section",
+      "fieldtype": "Section Break",
+      "label": "Property Details"
+     },
+     {
+      "fieldname": "intrested_location",
+      "fieldtype": "Data",
+      "label": "Intrested Location"
+     },
+     {
+      "fieldname": "city_pd",
+      "fieldtype": "Data",
+      "label": "City"
+     },
+     {
+      "fieldname": "state_pd",
+      "fieldtype": "Data",
+      "label": "State"
+     },
+     {
+      "fieldname": "property_type",
+      "fieldtype": "Data",
+      "label": "Property Type",
+      "options": "Commercial \nResidential"
+     },
+     {
+      "fieldname": "additional_information",
+      "fieldtype": "Small Text",
+      "label": "Additional Information "
+     },
+     {
+      "fieldname": "enquiry_status_section",
+      "fieldtype": "Section Break",
+      "label": "Enquiry Status"
+     },
+     {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Visit Scheduled\nVisit Done\nFollowing Up\nNot Converted\nJUNK\nNot Eligible\nIntrested for Next Year"
+     },
+     {
+      "depends_on": "eval:doc.property_own==\"Self Owned\"",
+      "fieldname": "property_area",
+      "fieldtype": "Select",
+      "label": "Property Area",
+      "options": "1200-2000 sq ft\n2000-3200 sq ft\n3200-4500 sq ft\nAbove 4500 sq ft"
+     },
+     {
+      "depends_on": "eval:doc.property_own==\"Self Owned\"",
+      "fieldname": "investment_capacity",
+      "fieldtype": "Select",
+      "label": "Investment Capacity",
+      "options": "05-10 lac\n10-15 lac\n15 lac Above"
+     },
+     {
+      "fieldname": "column_break_rw9pd",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "column_break_aylfm",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "column_break_pahk5",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "column_break_va5q8",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "section_break_tkicn",
+      "fieldtype": "Section Break"
+     },
+     {
+      "fieldname": "property_own",
+      "fieldtype": "Select",
+      "label": "Property Own ",
+      "options": "Rented\nSelf Owned"
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2023-08-18 09:59:36.107054",
+    "modified_by": "Administrator",
+    "module": "SHANTI EDUCATION",
+    "name": "Franchise Lead",
+    "naming_rule": "By \"Naming Series\" field",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+   }
