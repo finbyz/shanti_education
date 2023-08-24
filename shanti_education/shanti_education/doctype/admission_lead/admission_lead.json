@@ -136,12 +136,14 @@
   {
    "fieldname": "fathers_full_name",
    "fieldtype": "Data",
-   "label": "Father's Full Name"
+   "label": "Father's Full Name",
+   "reqd": 1
   },
   {
    "fieldname": "fathers_mobile_no",
    "fieldtype": "Data",
-   "label": "Father's Mobile No"
+   "label": "Father's Mobile No",
+   "reqd": 1
   },
   {
    "fieldname": "fathers_email",
@@ -156,7 +158,8 @@
   {
    "fieldname": "mothers_moble_no",
    "fieldtype": "Data",
-   "label": "Mother's Moble No."
+   "label": "Mother's Moble No.",
+   "reqd": 1
   },
   {
    "fieldname": "mothers_email",
@@ -181,17 +184,21 @@
   {
    "fieldname": "area",
    "fieldtype": "Data",
-   "label": "Area"
+   "label": "Area",
+   "reqd": 1
   },
   {
    "fieldname": "city",
    "fieldtype": "Data",
-   "label": "City"
+   "label": "City",
+   "reqd": 1
   },
   {
    "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "State"
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nAndaman and Nicobar Islands\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu and Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep Islands\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nOther Territory\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal",
+   "reqd": 1
   },
   {
    "fieldname": "pincode",
@@ -253,7 +260,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-25 17:03:53.652366",
+ "modified": "2023-08-24 16:54:29.025518",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Admission Lead",
