@@ -21,36 +21,37 @@
   "zone",
   "gender",
   "birth_date",
+  "assigned_to",
   "tab_break_msdp7",
   "residential_address_section",
   "address_line_1",
-  "area",
-  "state",
-  "pincode",
-  "column_break_aylfm",
   "address_line_2",
+  "area",
   "city",
+  "pincode",
+  "state",
   "country",
+  "column_break_aylfm",
   "mobile_no",
   "whatsapp_no",
   "email",
   "business_address_section",
   "address_line_1_ba",
-  "area_ba",
-  "state_ba",
-  "pincode_ba",
-  "column_break_pahk5",
   "address_line_2_ba",
+  "area_ba",
   "city_ba",
+  "pincode_ba",
+  "state_ba",
+  "column_break_pahk5",
   "country_ba",
   "mobile_no_ba",
   "whatsapp_no_ba",
   "email_ba",
   "property_details_section",
   "intrested_location",
+  "city_pd",
   "state_pd",
   "column_break_va5q8",
-  "city_pd",
   "property_own",
   "property_type",
   "property_area",
@@ -59,9 +60,7 @@
   "additional_information",
   "enquiry_status_section",
   "status",
-  "status_1",
   "column_break_xyj8w",
-  "status_2",
   "status_3"
  ],
  "fields": [
@@ -128,8 +127,7 @@
   {
    "fieldname": "birth_date",
    "fieldtype": "Date",
-   "label": "Birth Date",
-   "reqd": 1
+   "label": "Birth Date"
   },
   {
    "fieldname": "source",
@@ -341,29 +339,25 @@
    "options": "Rented\nSelf Owned"
   },
   {
-   "fieldname": "status_1",
-   "fieldtype": "Data",
-   "label": "Status 1"
-  },
-  {
    "fieldname": "column_break_xyj8w",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "status_2",
-   "fieldtype": "Data",
-   "label": "Status 2"
-  },
-  {
    "fieldname": "status_3",
    "fieldtype": "Select",
-   "label": "Status 3",
+   "label": "Final Status",
    "options": "MOU Signed\nAgreement Signed"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To ",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-21 10:14:11.707859",
+ "modified": "2023-08-24 17:49:44.518862",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Franchise Lead",

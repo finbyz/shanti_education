@@ -26,6 +26,7 @@
   "source",
   "year",
   "term",
+  "assigned_to",
   "contact_info_tab",
   "fathers_full_name",
   "fathers_mobile_no",
@@ -256,11 +257,17 @@
    "in_list_view": 1,
    "label": "Center Code",
    "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To ",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-24 16:54:29.025518",
+ "modified": "2023-08-24 17:48:22.456688",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Admission Lead",
