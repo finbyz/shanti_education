@@ -10,6 +10,7 @@
  "field_order": [
   "naming_series",
   "lead_owner",
+  "username",
   "column_break_vecny",
   "center_code",
   "child_details_section",
@@ -263,11 +264,18 @@
    "fieldtype": "Link",
    "label": "Assigned To ",
    "options": "User"
+  },
+  {
+   "fetch_from": "lead_owner.username",
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-24 17:48:22.456688",
+ "modified": "2023-08-29 11:45:19.716325",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Admission Lead",
