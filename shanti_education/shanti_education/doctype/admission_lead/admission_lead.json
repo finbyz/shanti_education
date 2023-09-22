@@ -10,20 +10,19 @@
  "field_order": [
   "naming_series",
   "lead_owner",
+  "status",
   "username",
   "column_break_vecny",
   "center_code",
   "child_details_section",
   "first_name",
+  "middle_name",
   "surname",
   "birth_date",
-  "status",
-  "lead_type",
+  "age_as_on",
   "class",
   "column_break_dhzql",
-  "middle_name",
   "gender",
-  "age_as_on",
   "source",
   "year",
   "term",
@@ -31,22 +30,23 @@
   "contact_info_tab",
   "fathers_full_name",
   "fathers_mobile_no",
+  "copy_whatsapp_father",
   "fathers_whatsapp_no",
   "fathers_email",
   "column_break_bxtot",
   "mothers_full_name",
   "mothers_moble_no",
+  "copy_whatsapp_mother",
   "mothers_whatsapp_no",
-  "mothers_email",
   "address_info_section",
   "address_line_1",
-  "area",
-  "country",
-  "pincode",
-  "column_break_l2qkf",
   "address_line_2",
+  "area",
   "city",
-  "state"
+  "column_break_l2qkf",
+  "state",
+  "country",
+  "pincode"
  ],
  "fields": [
   {
@@ -96,21 +96,13 @@
   {
    "fieldname": "middle_name",
    "fieldtype": "Data",
-   "label": "Middle Name",
-   "reqd": 1
+   "label": "Middle Name"
   },
   {
    "fieldname": "source",
    "fieldtype": "Link",
    "label": "Source",
    "options": "Lead Source"
-  },
-  {
-   "default": "Student",
-   "fieldname": "lead_type",
-   "fieldtype": "Select",
-   "label": "Lead Type",
-   "options": "\nClient\nChannel Partner\nConsultant\nStudent"
   },
   {
    "fieldname": "year",
@@ -145,12 +137,14 @@
    "fieldname": "fathers_mobile_no",
    "fieldtype": "Data",
    "label": "Father's Mobile No",
+   "options": "Phone",
    "reqd": 1
   },
   {
    "fieldname": "fathers_email",
    "fieldtype": "Data",
-   "label": "Father's Email"
+   "label": "Parents Email",
+   "options": "Email"
   },
   {
    "fieldname": "mothers_full_name",
@@ -161,12 +155,8 @@
    "fieldname": "mothers_moble_no",
    "fieldtype": "Data",
    "label": "Mother's Moble No.",
+   "options": "Phone",
    "reqd": 1
-  },
-  {
-   "fieldname": "mothers_email",
-   "fieldtype": "Data",
-   "label": "Mother's Email"
   },
   {
    "fieldname": "address_info_section",
@@ -210,12 +200,14 @@
   {
    "fieldname": "fathers_whatsapp_no",
    "fieldtype": "Data",
-   "label": "Father's Whatsapp No."
+   "label": "Father's Whatsapp No.",
+   "options": "Phone"
   },
   {
    "fieldname": "mothers_whatsapp_no",
    "fieldtype": "Data",
-   "label": "Mother's Whatsapp No."
+   "label": "Mother's Whatsapp No.",
+   "options": "Phone"
   },
   {
    "fieldname": "column_break_bxtot",
@@ -271,11 +263,21 @@
    "fieldtype": "Data",
    "label": "Username",
    "read_only": 1
+  },
+  {
+   "fieldname": "copy_whatsapp_father",
+   "fieldtype": "Button",
+   "label": "Copy Father's Mobile No"
+  },
+  {
+   "fieldname": "copy_whatsapp_mother",
+   "fieldtype": "Button",
+   "label": "Copy Mother's Mobile No"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-29 11:45:19.716325",
+ "modified": "2023-09-22 09:36:55.259705",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Admission Lead",

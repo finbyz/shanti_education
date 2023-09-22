@@ -24,3 +24,4 @@ class AdmissionLead(Document):
 		if delta.months:
 			month= f"{delta.months} Month"
 		self.age_as_on = f"{years} {month} "
+	
