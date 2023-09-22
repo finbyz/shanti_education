@@ -11,6 +11,14 @@ class AdmissionLead(Document):
 	def validate(self):
 		if self.birth_date:
 			self.set_age_as_on()
+		self.validate_pincode()
+
+
+	def validate_pincode(self):
+		pin_code = self.pincode.strip()
+		self.pincode = pin_code
+		if len(self.pincode)>6 or len(self.pincode)<6:
+			frappe.throw("Pincode has six digit So Please write six digit pincode")
 
 	def set_age_as_on(self):
 		birth_date = self.birth_date
@@ -24,4 +32,6 @@ class AdmissionLead(Document):
 		if delta.months:
 			month= f"{delta.months} Month"
 		self.age_as_on = f"{years} {month} "
+
+	
 	
