@@ -173,8 +173,9 @@
   },
   {
    "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "State"
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nAndaman and Nicobar Islands\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu and Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep Islands\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nOther Territory\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal"
   },
   {
    "fieldname": "country",
@@ -228,8 +229,9 @@
   },
   {
    "fieldname": "state_ba",
-   "fieldtype": "Data",
-   "label": "State"
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nAndaman and Nicobar Islands\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu and Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep Islands\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nOther Territory\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal"
   },
   {
    "fieldname": "country_ba",
@@ -273,8 +275,9 @@
   },
   {
    "fieldname": "state_pd",
-   "fieldtype": "Data",
-   "label": "State"
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nAndaman and Nicobar Islands\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu and Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep Islands\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nOther Territory\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal"
   },
   {
    "fieldname": "property_type",
@@ -296,17 +299,15 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Visit Scheduled\nVisit Done\nFollowing Up\nNot Converted\nJUNK\nNot Eligible\nIntrested for Next Year"
+   "options": "Discovery\nAppointment\nPresetation\nNegotiation Stage\nClose Won\nClose Lost"
   },
   {
-   "depends_on": "eval:doc.property_own==\"Self Owned\"",
    "fieldname": "property_area",
    "fieldtype": "Select",
    "label": "Property Area",
    "options": "1200-2000 sq ft\n2000-3200 sq ft\n3200-4500 sq ft\nAbove 4500 sq ft"
   },
   {
-   "depends_on": "eval:doc.property_own==\"Self Owned\"",
    "fieldname": "investment_capacity",
    "fieldtype": "Select",
    "label": "Investment Capacity",
@@ -346,7 +347,7 @@
    "fieldname": "status_3",
    "fieldtype": "Select",
    "label": "Final Status",
-   "options": "MOU Signed\nAgreement Signed"
+   "options": "DNP\nNo. does not exists\nMistakenly Raised/DNE\nNot interested\nPostpone\nLow Budget (0-3 L)\nNon Targeted Locations(NTL)\nProspect\nMeeting Done\nSign-up Done\nMOU Signed\nAgreement Signed\nMOU Signed but not procceding further"
   },
   {
    "fieldname": "assigned_to",
@@ -357,7 +358,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-24 17:49:44.518862",
+ "modified": "2023-11-24 17:23:57.885735",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Franchise Lead",
