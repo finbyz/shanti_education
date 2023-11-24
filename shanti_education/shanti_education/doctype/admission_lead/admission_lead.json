@@ -13,6 +13,7 @@
   "status",
   "username",
   "column_break_vecny",
+  "center_name",
   "center_code",
   "child_details_section",
   "first_name",
@@ -137,6 +138,7 @@
    "fieldname": "fathers_mobile_no",
    "fieldtype": "Data",
    "label": "Father's Mobile No",
+   "length": 10,
    "options": "Phone",
    "reqd": 1
   },
@@ -195,7 +197,8 @@
   {
    "fieldname": "pincode",
    "fieldtype": "Data",
-   "label": "Pincode"
+   "label": "Pincode",
+   "reqd": 1
   },
   {
    "fieldname": "fathers_whatsapp_no",
@@ -245,10 +248,12 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "center_name.custom_center_code",
    "fieldname": "center_code",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Center Code",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -273,11 +278,18 @@
    "fieldname": "copy_whatsapp_mother",
    "fieldtype": "Button",
    "label": "Copy Mother's Mobile No"
+  },
+  {
+   "fieldname": "center_name",
+   "fieldtype": "Link",
+   "label": "Center Name",
+   "options": "Customer",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-22 09:36:55.259705",
+ "modified": "2023-11-24 10:42:07.203026",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Admission Lead",

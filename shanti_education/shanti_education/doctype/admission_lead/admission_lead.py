@@ -12,6 +12,7 @@ class AdmissionLead(Document):
 		if self.birth_date:
 			self.set_age_as_on()
 		self.validate_pincode()
+		self.validate_contact()
 
 
 	def validate_pincode(self):
@@ -19,6 +20,27 @@ class AdmissionLead(Document):
 		self.pincode = pin_code
 		if len(self.pincode)>6 or len(self.pincode)<6:
 			frappe.throw("Pincode has six digit So Please write six digit pincode")
+	
+	def validate_contact(self):
+		fmn = self.fathers_mobile_no.strip()
+		self.fathers_mobile_no = fmn
+		if len(self.fathers_mobile_no)>10 or len(self.fathers_mobile_no)<10:
+			frappe.throw("Please write 10 digit number. So please update your <b>Father's Mobile No</b>.")
+		
+		fwn = self.fathers_whatsapp_no.strip()
+		self.fathers_whatsapp_no = fwn
+		if len(self.fathers_whatsapp_no)>10 or len(self.fathers_whatsapp_no)<10:
+			frappe.throw("Please write 10 digit number. So please update your <b>Father's WhatsApp No</b>.")
+		
+		mmn = self.mothers_moble_no.strip()
+		self.mothers_moble_no = mmn
+		if len(self.mothers_moble_no)>10 or len(self.mothers_moble_no)<10:
+			frappe.throw("Please write 10 digit number. So please update your <b>Mother's Mobile No</b>.")
+		
+		mwn = self.mothers_whatsapp_no.strip()
+		self.mothers_whatsapp_no = mwn
+		if len(self.mothers_whatsapp_no)>10 or len(self.mothers_whatsapp_no)<10:
+			frappe.throw("Please write 10 digit number. So please update your <b>Mother's WhatsApp No</b>.")
 
 	def set_age_as_on(self):
 		birth_date = self.birth_date
