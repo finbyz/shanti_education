@@ -14,6 +14,9 @@ class AdmissionLead(Document):
 		self.validate_pincode()
 		self.validate_contact()
 
+	def before_save(self):
+		self.validate_email_counts()
+		self.validate_contact_counts()
 
 	def validate_pincode(self):
 		pin_code = self.pincode.strip()
@@ -55,5 +58,44 @@ class AdmissionLead(Document):
 			month= f"{delta.months} Month"
 		self.age_as_on = f"{years} {month} "
 
+	def validate_email_counts(self):
+		if self.fathers_email:
+			count = frappe.db.count('Admission Lead', {'fathers_email': self.fathers_email, 'name': ('!=', self.name)})
+			threshold = 3
+			if count >= threshold:
+				admission_lead_names = frappe.get_list('Admission Lead', {'fathers_email': self.fathers_email, 'name': ('!=', self.name)}, pluck='name', limit=threshold)
+				admission_lead_names_str = ', '.join('<a href="/app/admission-lead/{0}">{0}</a>'.format(lead_name) for lead_name in admission_lead_names)
+				frappe.throw('Email ID {} is already used in {} Admission Lead. Please use a different email. <br>Admission Lead Names: {}'.format(self.fathers_email, count, admission_lead_names_str))
 	
-	
+	def validate_contact_counts(self):
+		if self.fathers_mobile_no:
+			count = frappe.db.count('Admission Lead', {'fathers_mobile_no': self.fathers_mobile_no, 'name': ('!=', self.name)})
+			threshold = 3
+			if count >= threshold:
+				admission_lead_names = frappe.get_list('Admission Lead', {'fathers_mobile_no': self.fathers_mobile_no, 'name': ('!=', self.name)}, pluck='name', limit=threshold)
+				admission_lead_names_str = ', '.join('<a href="/app/admission-lead/{0}">{0}</a>'.format(lead_name) for lead_name in admission_lead_names)
+				frappe.throw("Father's Mobile No {} is already used in {} Admission Lead. Please use a different number. <br>Admission Lead Names: {}".format(self.fathers_mobile_no, count, admission_lead_names_str))
+		
+		if self.fathers_whatsapp_no:
+			count = frappe.db.count('Admission Lead', {'fathers_whatsapp_no': self.fathers_whatsapp_no, 'name': ('!=', self.name)})
+			threshold = 3
+			if count >= threshold:
+				admission_lead_names = frappe.get_list('Admission Lead', {'fathers_whatsapp_no': self.fathers_whatsapp_no, 'name': ('!=', self.name)}, pluck='name', limit=threshold)
+				admission_lead_names_str = ', '.join('<a href="/app/admission-lead/{0}">{0}</a>'.format(lead_name) for lead_name in admission_lead_names)
+				frappe.throw("Father's Whatsapp No {} is already used in {} Admission Lead. Please use a different number. <br>Admission Lead Names: {}".format(self.fathers_whatsapp_no, count, admission_lead_names_str))
+		
+		if self.mothers_moble_no:
+			count = frappe.db.count('Admission Lead', {'mothers_moble_no': self.mothers_moble_no, 'name': ('!=', self.name)})
+			threshold = 3
+			if count >= threshold:
+				admission_lead_names = frappe.get_list('Admission Lead', {'mothers_moble_no': self.mothers_moble_no, 'name': ('!=', self.name)}, pluck='name', limit=threshold)
+				admission_lead_names_str = ', '.join('<a href="/app/admission-lead/{0}">{0}</a>'.format(lead_name) for lead_name in admission_lead_names)
+				frappe.throw("Mother's Mobile No {} is already used in {} Admission Lead. Please use a different number. <br>Admission Lead Names: {}".format(self.mothers_moble_no, count, admission_lead_names_str))
+		
+		if self.mothers_whatsapp_no:
+			count = frappe.db.count('Admission Lead', {'mothers_whatsapp_no': self.mothers_whatsapp_no, 'name': ('!=', self.name)})
+			threshold = 3
+			if count >= threshold:
+				admission_lead_names = frappe.get_list('Admission Lead', {'mothers_whatsapp_no': self.mothers_whatsapp_no, 'name': ('!=', self.name)}, pluck='name', limit=threshold)
+				admission_lead_names_str = ', '.join('<a href="/app/admission-lead/{0}">{0}</a>'.format(lead_name) for lead_name in admission_lead_names)
+				frappe.throw("Mother's Whatsapp No {} is already used in {} Admission Lead. Please use a different number. <br>Admission Lead Names: {}".format(self.mothers_whatsapp_no, count, admission_lead_names_str))
