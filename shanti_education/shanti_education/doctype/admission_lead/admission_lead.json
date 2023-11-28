@@ -253,8 +253,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Center Code",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "assigned_to",
@@ -289,7 +288,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-24 10:42:07.203026",
+ "modified": "2023-11-27 15:18:59.954659",
  "modified_by": "Administrator",
  "module": "SHANTI EDUCATION",
  "name": "Admission Lead",
