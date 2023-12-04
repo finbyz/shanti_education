@@ -10,6 +10,13 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 
+fixtures = [
+       {
+         "dt": "Role", 
+         "filters":[["name", "in", ['Timeline Disable']]]
+      },
+]
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/shanti_education/css/shanti_education.css"
 # app_include_js = "/assets/shanti_education/js/shanti_education.js"
@@ -33,7 +40,10 @@ app_license = "MIT"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-doctype_js = {"Lead" : "public/js/lead.js"}
+doctype_js = {
+    "Lead" : "public/js/lead.js",
+    "Issue": "public/js/issue.js"
+	}
 # Home Pages
 # ----------
 
