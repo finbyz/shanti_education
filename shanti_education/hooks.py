@@ -42,7 +42,8 @@ fixtures = [
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 doctype_js = {
     "Lead" : "public/js/lead.js",
-    "Issue": "public/js/issue.js"
+    "Issue": "public/js/issue.js",
+    "Purchase Invoice": "public/js/purchase_invoice.js"
 	}
 # Home Pages
 # ----------
