@@ -123,7 +123,13 @@ doctype_js = {
 doc_events = {
 	"Lead": {
 		"validate": "shanti_education.shanti_education.doc_event.lead.validate"
-	}
+	},
+  "Material Request":{
+      "before_validate" : "shanti_education.shanti_education.doc_event.material_request.before_validate"
+  },
+  "Purchase Order" :{
+      "before_validate" : "shanti_education.shanti_education.doc_event.purchase_order.before_validate"
+  } 
 }
 
 # Scheduled Tasks
