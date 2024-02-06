@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-05 15:41:20.914708",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "username",
+  "workflow_status",
+  "modification_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username"
+  },
+  {
+   "fieldname": "workflow_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Workflow Status"
+  },
+  {
+   "fieldname": "modification_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Modification Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-05 15:42:49.857707",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Workflow State Change",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
