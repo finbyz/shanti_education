@@ -33,3 +33,6 @@ def workflow_state(self):
         "workflow_status": self.workflow_state
     })
 
+def before_insert(self, method):
+    self.workflow_changes = []
+
