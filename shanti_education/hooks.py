@@ -44,7 +44,8 @@ doctype_js = {
     "Lead" : "public/js/lead.js",
     "Issue": "public/js/issue.js",
     "Purchase Invoice": "public/js/purchase_invoice.js",
-    "Stock Entry": "public/js/stock_entry.js"
+    "Stock Entry": "public/js/stock_entry.js",
+    "Payment Entry": "public/js/payment_entry.js",
 	}
 # Home Pages
 # ----------
