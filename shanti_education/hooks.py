@@ -46,6 +46,7 @@ doctype_js = {
     "Purchase Invoice": "public/js/purchase_invoice.js",
     "Stock Entry": "public/js/stock_entry.js",
     "Payment Entry": "public/js/payment_entry.js",
+    "Expense Claim": "public/js/expense_claim.js",
 	}
 # Home Pages
 # ----------
