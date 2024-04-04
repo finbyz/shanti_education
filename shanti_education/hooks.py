@@ -124,6 +124,9 @@ doctype_js = {
 #	}
 # }
 doc_events = {
+    "Admission Lead":{
+        "before_naming": "shanti_education.shanti_education.doc_event.naming_series.before_naming"
+    },
 	"Lead": {
 		"validate": "shanti_education.shanti_education.doc_event.lead.validate"
 	},
