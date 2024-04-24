@@ -136,7 +136,7 @@ doc_events = {
   "Purchase Order" :{
       "before_validate" : "shanti_education.shanti_education.doc_event.purchase_order.before_validate"
   },
-  ("Payment Entry","Purchase Invoice","Material Request","Purchase Receipt", "Purchase Order","Journal Entry","Sales Invoice","Sales Order","Delivery Note") :{
+  ("Payment Entry","Purchase Invoice","Material Request","Purchase Receipt", "Purchase Order","Journal Entry","Sales Invoice","Sales Order","Delivery Note","Employee Advance","Expense Claim") :{
       "before_insert": "shanti_education.shanti_education.doc_event.workflow_state_change.before_insert",
       "before_validate": "shanti_education.shanti_education.doc_event.workflow_state_change.before_validate",
   }
