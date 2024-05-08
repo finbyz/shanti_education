@@ -62,4 +62,20 @@ frappe.ui.form.on("Payment Entry", {
 			frm.events.get_outstanding_documents(frm, filters, get_outstanding_invoices, get_orders_to_be_billed);
 		}, __("Filters"), __(btn_text));
 	},
+	bank_account: function(frm){
+		if(frm.doc.bank_account && frm.doc.payment_type == "Pay"){
+			frappe.db.get_value("Bank Account", frm.doc.bank_account, "account", function(r){
+				if(r.account){
+					frm.set_value("paid_from", r.account);
+				}
+			});
+		}
+		if(frm.doc.bank_account && frm.doc.payment_type == "Receive"){
+			frappe.db.get_value("Bank Account", frm.doc.bank_account, "account", function(r){
+				if(r.account){
+					frm.set_value("paid_to", r.account);
+				}
+			});
+		}
+	}
 })
