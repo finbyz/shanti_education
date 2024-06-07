@@ -136,6 +136,9 @@ doc_events = {
   "Purchase Invoice":{
       "before_validate" : "shanti_education.shanti_education.doc_event.purchase_invoice.before_validate"
   },
+  "Sales Invoice":{
+      "before_validate" : "shanti_education.shanti_education.doc_event.sales_invoice.before_validate"
+  },
   "Purchase Order" :{
       "before_validate" : "shanti_education.shanti_education.doc_event.purchase_order.before_validate"
   },
