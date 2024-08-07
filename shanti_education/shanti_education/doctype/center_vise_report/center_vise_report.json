@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CVR-.####",
+ "creation": "2024-08-06 17:59:49.553113",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "centre_visit_report",
+  "zone",
+  "centre_code",
+  "date_of_visit",
+  "previous_date_of_visit",
+  "age_of_the_center",
+  "agenda_of_visit",
+  "territory_manager_a_and_a",
+  "center_visit_report_column_break",
+  "city",
+  "centre_name",
+  "reporting_time",
+  "national_head_academics",
+  "total_number_of_students",
+  "center_data_section_break_actual",
+  "center_data",
+  "support_academic_manager_section_break",
+  "pending_queries",
+  "new_queries_raised_section_break",
+  "new_queries_raised",
+  "remarks_and_suggestions_section_break",
+  "remarks_and_suggestions",
+  "highlight_of_the_center_section_break",
+  "highlight_of_the_center",
+  "academic_and_audit_manager_",
+  "national_head_academics_manager_column_break",
+  "zonal_manager",
+  "national_head_academic"
+ ],
+ "fields": [
+  {
+   "fieldname": "centre_visit_report",
+   "fieldtype": "Section Break",
+   "label": "Centre Visit Report"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "centre_code",
+   "fieldtype": "Data",
+   "label": "Centre Code"
+  },
+  {
+   "fieldname": "date_of_visit",
+   "fieldtype": "Date",
+   "label": "Date of Visit"
+  },
+  {
+   "fieldname": "previous_date_of_visit",
+   "fieldtype": "Date",
+   "label": "Previous Date of Visit"
+  },
+  {
+   "fieldname": "age_of_the_center",
+   "fieldtype": "Data",
+   "label": "Age of the Center"
+  },
+  {
+   "fieldname": "agenda_of_visit",
+   "fieldtype": "Data",
+   "label": "Agenda of Visit"
+  },
+  {
+   "fieldname": "territory_manager_a_and_a",
+   "fieldtype": "Data",
+   "label": "Territory Manager A and A"
+  },
+  {
+   "fieldname": "center_visit_report_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "centre_name",
+   "fieldtype": "Data",
+   "label": "Centre Name"
+  },
+  {
+   "fieldname": "reporting_time",
+   "fieldtype": "Datetime",
+   "label": "Reporting Time"
+  },
+  {
+   "fieldname": "national_head_academics",
+   "fieldtype": "Data",
+   "label": "National Head Academics"
+  },
+  {
+   "fieldname": "total_number_of_students",
+   "fieldtype": "Int",
+   "label": "Total Number of students"
+  },
+  {
+   "fieldname": "center_data_section_break_actual",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "center_data",
+   "fieldtype": "Table",
+   "label": "Center Data",
+   "options": "Center Data"
+  },
+  {
+   "fieldname": "support_academic_manager_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pending_queries",
+   "fieldtype": "Table",
+   "label": "Support Academic Manager",
+   "options": "Support Academic Manager"
+  },
+  {
+   "fieldname": "new_queries_raised_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "new_queries_raised",
+   "fieldtype": "Table",
+   "label": "New Queries Raised",
+   "options": "Queries Raised"
+  },
+  {
+   "fieldname": "remarks_and_suggestions_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks_and_suggestions",
+   "fieldtype": "Table",
+   "label": "Remarks and Suggestions",
+   "options": "Remarks And Suggestions"
+  },
+  {
+   "fieldname": "highlight_of_the_center_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "highlight_of_the_center",
+   "fieldtype": "Small Text",
+   "label": "Highlight of the Center"
+  },
+  {
+   "fieldname": "academic_and_audit_manager_",
+   "fieldtype": "Data",
+   "label": "Academic and Audit Manager "
+  },
+  {
+   "fieldname": "national_head_academics_manager_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zonal_manager",
+   "fieldtype": "Data",
+   "label": "Zonal Manager"
+  },
+  {
+   "fieldname": "national_head_academic",
+   "fieldtype": "Data",
+   "label": "National Head Academic"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-06 18:14:34.900850",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Center Vise Report",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

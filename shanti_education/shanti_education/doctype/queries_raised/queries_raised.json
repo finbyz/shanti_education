@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 11:40:00.446618",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "queries",
+  "suggestions",
+  "concerned_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "queries",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Queries"
+  },
+  {
+   "fieldname": "suggestions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Suggestions"
+  },
+  {
+   "fieldname": "concerned_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Concerned Person"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-05 11:40:00.446618",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Queries Raised",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

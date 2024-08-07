@@ -1,0 +1,896 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AOS-.####",
+ "creation": "2024-08-06 18:20:12.229365",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "academic_observation_score_section_break",
+  "name_of_the_center",
+  "entrance_gate_safety_or_security_guard_or_maid",
+  "escort_card",
+  "free_spirit_zone_remarks",
+  "free_spirit_zone_column_break",
+  "date",
+  "clean_and_safe_outdoor_equipment",
+  "green_grass_mat_or_grass_or_sand",
+  "juniors_activity_room_section_break_",
+  "spots_labeling_jr_activity_room",
+  "toys_and_teaching_aids_available_and_arranged_spot_wise_jr_act",
+  "eva_mats_jr_activity_room",
+  "remarks_jr_activity_room",
+  "jr_activity_room_column_break",
+  "av_or_music_system_or_tv_jr_activity_room",
+  "library_rack_jr_activity_room",
+  "todd_care_section_break",
+  "todd_care",
+  "theme_board_display_todd_care",
+  "organized_classroom_todd_care",
+  "remark_todd_care",
+  "todd_care_column_break",
+  "week_todd_care",
+  "charts_display_as_suggested_todd_care",
+  "rhyme_chart_with_picture_todd_care",
+  "todd_care_column_break_2",
+  "theme_todd_care",
+  "student_work_display_todd_care",
+  "theme_wise_danglers_todd_care",
+  "teacher_section_break",
+  "teaching_aid_usage_teacher",
+  "english_communication",
+  "remark_teacher",
+  "teacher_column_break_1",
+  "appropriate_voice_modulation_teacher",
+  "notebook_preparation_teacher",
+  "teacher_column_break_2",
+  "transition_activity_teacher",
+  "proper_corrections_teacher",
+  "teacher_column_break_3",
+  "instructions_teacher",
+  "proper_attire_teacher",
+  "section_break_nursery",
+  "nursery",
+  "theme_board_display_nursery",
+  "organized_classroom_nursery",
+  "remarks_nursery",
+  "nursery_column_break_1",
+  "week_nursery",
+  "charts_displayed_as_suggested",
+  "rhyme_chart_with_picture",
+  "nursery_column_break_2",
+  "theme_nursery",
+  "student_work_display_nursery",
+  "theme_wise_danglers_nursery",
+  "nursery_teacher_section_break",
+  "teaching_aid_usage_nursery_teacher",
+  "english_communication_nursery_teacher",
+  "remarks_nursery_teacher",
+  "nursery_teacher_column_break_1",
+  "appropriate_voice_modulation_nursery_teacher",
+  "notebook_preparation_nursery_teacher",
+  "nursery_teacher_column_break_2",
+  "transition_activity_nursery_teacher",
+  "proper_corrections_nursery_teacher",
+  "nursery_teacher_column_break_3",
+  "instructions_nursery_teacher",
+  "proper_attire_nursery_teacher",
+  "jr_kg_section_break",
+  "jr_kg",
+  "theme_board_display_jr_kg",
+  "organized_classroom_jr_kg",
+  "remarks_jr_kg",
+  "jr_kr_column_break",
+  "week_jr_kg",
+  "charts_display_as_suggested_jr_kg",
+  "rhyme_chart_with_picture_jr_kg",
+  "jr_kg_column_break_2",
+  "theme_jr_kg",
+  "student_work_display_jr_kg",
+  "theme_wise_danglers_jr_kg",
+  "jr_kg_teacher_section_break",
+  "teaching_aid_usage_jr_kg_teacher",
+  "english_communication_jr_kg_teacher",
+  "remark_jr_kg_teacher",
+  "jr_kg_teacher_column_break_1",
+  "appropriate_voice_modulation_jr_kg_teacher",
+  "notebook_preparation_jr_kg",
+  "jr_kg_teacher_column_break_2",
+  "transition_activity_jr_kg_teacher",
+  "proper_corrections_jr_kg",
+  "jr_kg_teacher_column_break_3",
+  "instructions_jr_kg_teacher",
+  "proper_attire_jr_kg_teacher",
+  "sr_kg_section_break",
+  "sr_kg",
+  "theme_board_display_sr_kg",
+  "organized_classroom_sr_kg",
+  "remark_sr_kg",
+  "sr_kg_column_break",
+  "week_sr_kg",
+  "charts_display_as_suggested__sr_kg_",
+  "rhyme_chart_with_picture_sr_kg",
+  "sr_kg_column_break_2",
+  "theme_sr_kg",
+  "student_work_display_sr_kg",
+  "theme_wise_danglers_srk_kg",
+  "sr_kg_teacher_section_break",
+  "teaching_aid_usage_sr_kg_teacher",
+  "english_communication_sr_kg_teacher",
+  "remark_sr_kg_teacher",
+  "sr_kg_teacher_column_break_2",
+  "appropriate_voice_modulation_sr_kg_teacher",
+  "notebook_preparation_sr_kg_teacher",
+  "sr_kg_teacher_column_break_3",
+  "transition_activity_sr_kg",
+  "proper_corrections_sr_kg_teacher",
+  "sr_kg_teacher_column_break_4",
+  "instructions_sr_kg_teacher",
+  "proper_attire_sr_kg_teacher",
+  "safety_and_hygiene_section_break",
+  "snack_timetable",
+  "covered_balconies",
+  "safety_and_hygiene_column_break_1",
+  "baby_doors",
+  "attendant_on_staircase_at_time_of_arrival_dispersal",
+  "safety_and_hygiene_column_break_2",
+  "clean_washroom",
+  "handwash_and_napkins",
+  "safety_and_hygiene_remarks",
+  "last_infrastructure_painting_work_section_break",
+  "last_infrastructure_painting_work",
+  "any_suggestion",
+  "last_infrastructure_column_break",
+  "year",
+  "year_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "academic_observation_score_section_break",
+   "fieldtype": "Section Break",
+   "label": "Academic Observation Score"
+  },
+  {
+   "default": "0",
+   "fieldname": "entrance_gate_safety_or_security_guard_or_maid",
+   "fieldtype": "Check",
+   "label": "Entrance gate safety or security guard or maid"
+  },
+  {
+   "default": "0",
+   "fieldname": "escort_card",
+   "fieldtype": "Check",
+   "label": "Escort Card"
+  },
+  {
+   "fieldname": "free_spirit_zone_remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "free_spirit_zone_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "clean_and_safe_outdoor_equipment",
+   "fieldtype": "Check",
+   "label": "Clean and safe outdoor equipment"
+  },
+  {
+   "default": "0",
+   "fieldname": "green_grass_mat_or_grass_or_sand",
+   "fieldtype": "Check",
+   "label": "Green grass mat or grass or sand"
+  },
+  {
+   "fieldname": "juniors_activity_room_section_break_",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "spots_labeling_jr_activity_room",
+   "fieldtype": "Check",
+   "label": "Spots Labeling"
+  },
+  {
+   "default": "0",
+   "fieldname": "toys_and_teaching_aids_available_and_arranged_spot_wise_jr_act",
+   "fieldtype": "Check",
+   "label": "Toys and teaching aids available and arranged spot wise"
+  },
+  {
+   "default": "0",
+   "fieldname": "eva_mats_jr_activity_room",
+   "fieldtype": "Check",
+   "label": "Eva Mats"
+  },
+  {
+   "fieldname": "remarks_jr_activity_room",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "jr_activity_room_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "av_or_music_system_or_tv_jr_activity_room",
+   "fieldtype": "Check",
+   "label": "AV or Music System or TV"
+  },
+  {
+   "default": "0",
+   "fieldname": "library_rack_jr_activity_room",
+   "fieldtype": "Check",
+   "label": "Library Rack"
+  },
+  {
+   "fieldname": "todd_care_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "todd_care",
+   "fieldtype": "Data",
+   "label": "Todd Care"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_board_display_todd_care",
+   "fieldtype": "Check",
+   "label": "Theme Board Display"
+  },
+  {
+   "default": "0",
+   "fieldname": "organized_classroom_todd_care",
+   "fieldtype": "Check",
+   "label": "Organized Classroom"
+  },
+  {
+   "fieldname": "remark_todd_care",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "todd_care_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "week_todd_care",
+   "fieldtype": "Data",
+   "label": "Week"
+  },
+  {
+   "default": "0",
+   "fieldname": "charts_display_as_suggested_todd_care",
+   "fieldtype": "Check",
+   "label": "Charts display as suggested"
+  },
+  {
+   "default": "0",
+   "fieldname": "rhyme_chart_with_picture_todd_care",
+   "fieldtype": "Check",
+   "label": "Rhyme chart with picture"
+  },
+  {
+   "fieldname": "todd_care_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theme_todd_care",
+   "fieldtype": "Data",
+   "label": "Theme"
+  },
+  {
+   "default": "0",
+   "fieldname": "student_work_display_todd_care",
+   "fieldtype": "Check",
+   "label": "Student work display"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_wise_danglers_todd_care",
+   "fieldtype": "Check",
+   "label": "Theme wise danglers"
+  },
+  {
+   "fieldname": "teacher_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "teaching_aid_usage_teacher",
+   "fieldtype": "Check",
+   "label": "Teaching aid usage"
+  },
+  {
+   "default": "0",
+   "fieldname": "english_communication",
+   "fieldtype": "Check",
+   "label": "English communication"
+  },
+  {
+   "fieldname": "remark_teacher",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "teacher_column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "appropriate_voice_modulation_teacher",
+   "fieldtype": "Check",
+   "label": "Appropriate voice modulation"
+  },
+  {
+   "default": "0",
+   "fieldname": "notebook_preparation_teacher",
+   "fieldtype": "Check",
+   "label": "Notebook preparation teacher"
+  },
+  {
+   "fieldname": "teacher_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transition_activity_teacher",
+   "fieldtype": "Check",
+   "label": "Transition activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_corrections_teacher",
+   "fieldtype": "Check",
+   "label": "Proper corrections"
+  },
+  {
+   "fieldname": "teacher_column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "instructions_teacher",
+   "fieldtype": "Check",
+   "label": "Instructions"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_attire_teacher",
+   "fieldtype": "Check",
+   "label": "Proper attire"
+  },
+  {
+   "fieldname": "section_break_nursery",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nursery",
+   "fieldtype": "Data",
+   "label": "Nursery"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_board_display_nursery",
+   "fieldtype": "Check",
+   "label": "Theme board display"
+  },
+  {
+   "default": "0",
+   "fieldname": "organized_classroom_nursery",
+   "fieldtype": "Check",
+   "label": "Organized classroom"
+  },
+  {
+   "fieldname": "remarks_nursery",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "nursery_column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "week_nursery",
+   "fieldtype": "Data",
+   "label": "Week"
+  },
+  {
+   "default": "0",
+   "fieldname": "charts_displayed_as_suggested",
+   "fieldtype": "Check",
+   "label": "Charts Displayed As Suggested"
+  },
+  {
+   "default": "0",
+   "fieldname": "rhyme_chart_with_picture",
+   "fieldtype": "Check",
+   "label": "Rhyme Chart With Picture"
+  },
+  {
+   "fieldname": "nursery_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theme_nursery",
+   "fieldtype": "Data",
+   "label": "Theme"
+  },
+  {
+   "default": "0",
+   "fieldname": "student_work_display_nursery",
+   "fieldtype": "Check",
+   "label": "Student Work Display"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_wise_danglers_nursery",
+   "fieldtype": "Check",
+   "label": "Theme Wise Danglers"
+  },
+  {
+   "fieldname": "nursery_teacher_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "teaching_aid_usage_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Teaching Aid Usage"
+  },
+  {
+   "default": "0",
+   "fieldname": "english_communication_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "English Communication"
+  },
+  {
+   "fieldname": "remarks_nursery_teacher",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "nursery_teacher_column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "appropriate_voice_modulation_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Appropriate Voice Modulation"
+  },
+  {
+   "default": "0",
+   "fieldname": "notebook_preparation_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Notebook Preparation"
+  },
+  {
+   "fieldname": "nursery_teacher_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transition_activity_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Transition Activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_corrections_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Proper Corrections"
+  },
+  {
+   "fieldname": "nursery_teacher_column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "instructions_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Instructions"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_attire_nursery_teacher",
+   "fieldtype": "Check",
+   "label": "Proper Attire"
+  },
+  {
+   "fieldname": "jr_kg_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jr_kg",
+   "fieldtype": "Data",
+   "label": "Jr KG"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_board_display_jr_kg",
+   "fieldtype": "Check",
+   "label": "Theme Board Display"
+  },
+  {
+   "default": "0",
+   "fieldname": "organized_classroom_jr_kg",
+   "fieldtype": "Check",
+   "label": "Organized Classroom"
+  },
+  {
+   "fieldname": "remarks_jr_kg",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "jr_kr_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "week_jr_kg",
+   "fieldtype": "Data",
+   "label": "Week"
+  },
+  {
+   "default": "0",
+   "fieldname": "charts_display_as_suggested_jr_kg",
+   "fieldtype": "Check",
+   "label": "Charts Display As Suggested"
+  },
+  {
+   "default": "0",
+   "fieldname": "rhyme_chart_with_picture_jr_kg",
+   "fieldtype": "Check",
+   "label": "Rhyme Chart With Picture"
+  },
+  {
+   "fieldname": "jr_kg_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theme_jr_kg",
+   "fieldtype": "Data",
+   "label": "Theme"
+  },
+  {
+   "default": "0",
+   "fieldname": "student_work_display_jr_kg",
+   "fieldtype": "Check",
+   "label": "Student Work Display"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_wise_danglers_jr_kg",
+   "fieldtype": "Check",
+   "label": "Theme Wise Danglers"
+  },
+  {
+   "fieldname": "jr_kg_teacher_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "teaching_aid_usage_jr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Teaching Aid Usage"
+  },
+  {
+   "default": "0",
+   "fieldname": "english_communication_jr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "English Communication"
+  },
+  {
+   "fieldname": "remark_jr_kg_teacher",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "jr_kg_teacher_column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "appropriate_voice_modulation_jr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Appropriate Voice Modulation"
+  },
+  {
+   "default": "0",
+   "fieldname": "notebook_preparation_jr_kg",
+   "fieldtype": "Check",
+   "label": "Notebook Preparation"
+  },
+  {
+   "fieldname": "jr_kg_teacher_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transition_activity_jr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Transition Activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_corrections_jr_kg",
+   "fieldtype": "Check",
+   "label": "Proper Corrections"
+  },
+  {
+   "fieldname": "jr_kg_teacher_column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "instructions_jr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Instructions"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_attire_jr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Proper Attire"
+  },
+  {
+   "fieldname": "sr_kg_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sr_kg",
+   "fieldtype": "Data",
+   "label": "SR KG"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_board_display_sr_kg",
+   "fieldtype": "Check",
+   "label": "Theme Board Display"
+  },
+  {
+   "default": "0",
+   "fieldname": "organized_classroom_sr_kg",
+   "fieldtype": "Check",
+   "label": "Organized Classroom"
+  },
+  {
+   "fieldname": "remark_sr_kg",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "sr_kg_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "week_sr_kg",
+   "fieldtype": "Data",
+   "label": "Week"
+  },
+  {
+   "default": "0",
+   "fieldname": "charts_display_as_suggested__sr_kg_",
+   "fieldtype": "Check",
+   "label": "Charts Display as Suggested"
+  },
+  {
+   "default": "0",
+   "fieldname": "rhyme_chart_with_picture_sr_kg",
+   "fieldtype": "Check",
+   "label": "Rhyme Chart With Picture"
+  },
+  {
+   "fieldname": "sr_kg_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theme_sr_kg",
+   "fieldtype": "Data",
+   "label": "Theme"
+  },
+  {
+   "default": "0",
+   "fieldname": "student_work_display_sr_kg",
+   "fieldtype": "Check",
+   "label": "Student Work Display"
+  },
+  {
+   "default": "0",
+   "fieldname": "theme_wise_danglers_srk_kg",
+   "fieldtype": "Check",
+   "label": "Theme Wise Danglers"
+  },
+  {
+   "fieldname": "sr_kg_teacher_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "teaching_aid_usage_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Teaching Aid Usage"
+  },
+  {
+   "default": "0",
+   "fieldname": "english_communication_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "English communication"
+  },
+  {
+   "fieldname": "remark_sr_kg_teacher",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "sr_kg_teacher_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "appropriate_voice_modulation_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Appropriate Voice Modulation"
+  },
+  {
+   "default": "0",
+   "fieldname": "notebook_preparation_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Notebook Preparation"
+  },
+  {
+   "fieldname": "sr_kg_teacher_column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transition_activity_sr_kg",
+   "fieldtype": "Check",
+   "label": "Transition activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_corrections_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Proper Corrections"
+  },
+  {
+   "fieldname": "sr_kg_teacher_column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "instructions_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Instructions"
+  },
+  {
+   "default": "0",
+   "fieldname": "proper_attire_sr_kg_teacher",
+   "fieldtype": "Check",
+   "label": "Proper Attire"
+  },
+  {
+   "fieldname": "safety_and_hygiene_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "snack_timetable",
+   "fieldtype": "Check",
+   "label": "Snack timetable"
+  },
+  {
+   "default": "0",
+   "fieldname": "covered_balconies",
+   "fieldtype": "Check",
+   "label": "Covered Balconies"
+  },
+  {
+   "fieldname": "safety_and_hygiene_column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "baby_doors",
+   "fieldtype": "Check",
+   "label": "Baby Doors"
+  },
+  {
+   "default": "0",
+   "fieldname": "attendant_on_staircase_at_time_of_arrival_dispersal",
+   "fieldtype": "Check",
+   "label": "Attendant on staircase at time of Arrival Dispersal"
+  },
+  {
+   "fieldname": "safety_and_hygiene_column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "clean_washroom",
+   "fieldtype": "Check",
+   "label": "Clean Washroom"
+  },
+  {
+   "default": "0",
+   "fieldname": "handwash_and_napkins",
+   "fieldtype": "Check",
+   "label": "Handwash and  Napkins"
+  },
+  {
+   "fieldname": "safety_and_hygiene_remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "last_infrastructure_painting_work_section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_infrastructure_painting_work",
+   "fieldtype": "Data",
+   "label": "Last infrastructure painting work"
+  },
+  {
+   "fieldname": "any_suggestion",
+   "fieldtype": "Small Text",
+   "label": "Any suggestion"
+  },
+  {
+   "fieldname": "last_infrastructure_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "year_remarks",
+   "fieldtype": "Small Text",
+   "label": "Year Remarks"
+  },
+  {
+   "fieldname": "name_of_the_center",
+   "fieldtype": "Data",
+   "label": "Name of the Center"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 09:39:24.226282",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Academic Observation Score",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

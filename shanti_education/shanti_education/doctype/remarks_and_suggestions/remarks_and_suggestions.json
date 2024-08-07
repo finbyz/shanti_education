@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 11:41:26.754496",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "points_of_discussion"
+ ],
+ "fields": [
+  {
+   "fieldname": "points_of_discussion",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Points of Discussion"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-05 11:41:26.754496",
+ "modified_by": "Administrator",
+ "module": "SHANTI EDUCATION",
+ "name": "Remarks And Suggestions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
