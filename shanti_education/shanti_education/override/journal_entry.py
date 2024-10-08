@@ -58,39 +58,3 @@ class JournalEntry(_JournalEntry):
 			inv, self.tax_withholding_category
 		)
         # finbyz chnges End
-		if not tax_withholding_details:
-			return
-
-		accounts = []
-		for d in self.get("accounts"):
-			if d.get("account") == tax_withholding_details.get("account_head"):
-				d.update(
-					{
-						"account": tax_withholding_details.get("account_head"),
-						debit_or_credit: tax_withholding_details.get("tax_amount"),
-					}
-				)
-
-			accounts.append(d.get("account"))
-
-			if d.get("account") == party_account:
-				d.update({rev_debit_or_credit: party_amount - tax_withholding_details.get("tax_amount")})
-
-		if not accounts or tax_withholding_details.get("account_head") not in accounts:
-			self.append(
-				"accounts",
-				{
-					"account": tax_withholding_details.get("account_head"),
-					rev_debit_or_credit: tax_withholding_details.get("tax_amount"),
-					"against_account": parties[0],
-				},
-			)
-
-		to_remove = [
-			d
-			for d in self.get("accounts")
-			if not d.get(rev_debit_or_credit) and d.account == tax_withholding_details.get("account_head")
-		]
-
-		for d in to_remove:
-			self.remove(d)
