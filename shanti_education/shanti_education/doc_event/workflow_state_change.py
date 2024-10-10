@@ -27,8 +27,13 @@ def before_validate(self, method):
         workflow_state(self)
 
 def workflow_state(self):
+    user_name = frappe.db.get_value("User",frappe.session.user,"full_name")
+    for row in self.workflow_changes:
+        if row.workflow_status == self.workflow_state:
+            self.workflow_changes = []
+            user_name = row.username
     self.append('workflow_changes', {
-        'username': frappe.db.get_value("User",frappe.session.user,"full_name"),
+        'username': user_name,
         'modification_time': now(),
         "workflow_status": self.workflow_state
     })
