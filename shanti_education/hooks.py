@@ -15,6 +15,10 @@ fixtures = [
          "dt": "Role", 
          "filters":[["name", "in", ['Timeline Disable']]]
       },
+       {
+            "dt": "Custom Field",
+            "filters":[["module", "in", ['SHANTI EDUCATION']]]
+       }
 ]
 
 # include js, css files in header of desk.html
