@@ -68,9 +68,9 @@ class JournalEntry(_JournalEntry):
             }
         )
         # finbyz changes Extra argument Remove (advance_taxes, voucher_wise_amount) Start
-        tax_withholding_details = get_party_tax_withholding_details(
-            inv, self.tax_withholding_category
-        )
+        tax_withholding_details, advance_taxes, voucher_wise_amount = get_party_tax_withholding_details(
+			inv, self.tax_withholding_category
+		)
         # finbyz changes Extra argument Remove (advance_taxes, voucher_wise_amount) End
         if not tax_withholding_details:
             return
