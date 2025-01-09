@@ -127,9 +127,9 @@ override_doctype_class = {
 # Credit Note Type Journal Entry End
 
 # Debit Note Type Journal Entry Start
-from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
-from shanti_education.shanti_education.override.tax_withholding_category import get_invoice_total_without_tcs as get_invoice_total_without_tcs
-tax_withholding_category.get_invoice_total_without_tcs = get_invoice_total_without_tcs
+# from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
+# from shanti_education.shanti_education.override.tax_withholding_category import get_invoice_total_without_tcs as get_invoice_total_without_tcs
+# tax_withholding_category.get_invoice_total_without_tcs = get_invoice_total_without_tcs
 
 # Document Events
 # ---------------
