@@ -121,9 +121,9 @@ override_doctype_class = {
 # from shanti_education.shanti_education.override.tax_withholding_category import get_tds_amount as get_tds_amount_shanti
 # tax_withholding_category.get_tds_amount = get_tds_amount_shanti
 
-from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
-from shanti_education.shanti_education.override.tax_withholding_category import get_tds_amount as get_tds_amount_override
-tax_withholding_category.get_tds_amount = get_tds_amount_override
+# from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
+# from shanti_education.shanti_education.override.tax_withholding_category import get_tds_amount as get_tds_amount_override
+# tax_withholding_category.get_tds_amount = get_tds_amount_override
 # Credit Note Type Journal Entry End
 
 # Debit Note Type Journal Entry Start
