@@ -117,9 +117,9 @@ override_doctype_class = {
     "Journal Entry": "shanti_education.shanti_education.override.journal_entry.JournalEntry",
 }
 
-from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
-from shanti_education.shanti_education.override.tax_withholding_category import get_tds_amount as get_tds_amount_shanti
-tax_withholding_category.get_tds_amount = get_tds_amount_shanti
+# from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
+# from shanti_education.shanti_education.override.tax_withholding_category import get_tds_amount as get_tds_amount_shanti
+# tax_withholding_category.get_tds_amount = get_tds_amount_shanti
 
 from erpnext.accounts.doctype.tax_withholding_category import tax_withholding_category 
 from shanti_education.shanti_education.override.tax_withholding_category import get_tds_amount as get_tds_amount_override
